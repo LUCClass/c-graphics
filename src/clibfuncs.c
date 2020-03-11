@@ -1,5 +1,6 @@
 
-#include <string.h>
+#include "clibfuncs.h"
+
 /*
  * C Library Routines 
  *
