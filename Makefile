@@ -10,7 +10,6 @@ OBJS = \
 	stage1.o \
 	stage1main.o \
 	clibfuncs.o \
-	mustafa.o \
 
 OBJ = $(patsubst %,$(ODIR)/%,$(OBJS))
 

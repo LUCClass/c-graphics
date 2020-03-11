@@ -224,7 +224,7 @@ lowMemDetectError:
 
 
 [BITS 32]
-    extern stage1main
+    extern main
 protectedMode:
 
     ;-------------------------------;
@@ -237,7 +237,7 @@ protectedMode:
     mov     es, ax
     mov     esp, 90000h     ; stack begins from 90000h
 
-    jmp stage1main ; Call stage 1 C main
+    jmp main ; Call stage 1 C main
 
 
 ; Global Descriptor Table. Taken from:
