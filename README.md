@@ -43,17 +43,12 @@ represented in the right color pallette. You can do this within Photoshop.
 
 1. [Download the BIOS color
 pallette](http://neilklingensmith.com/teaching/loyola/cs264-s2020/activities)
-
 2. Open an image in Photoshop.
-
 3. Go to Image > Mode > Indexed Color... and under the Palette dropdown select
 Custom... Choose the palette file that you downloaded in step 1.
-
 4. Save the file as a jpeg or something.
-
 5. [Use an online converter](https://littlevgl.com/image-to-c-array) to convert
 the image into a C array.
-
 6. Paste the C array into a C file and compile it. If you create a new C file,
 you'll need to add it to the `OBJS` list in the Makefile.
 
@@ -61,6 +56,7 @@ you'll need to add it to the `OBJS` list in the Makefile.
 
 #### Copying your Image to the Video Buffer
 
-
+You need to copy the image from the C array into video memory one line at a
+time.
 
 
