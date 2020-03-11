@@ -1,0 +1,8 @@
+set confirm off
+target remote localhost:1234
+file obj/stage1.elf
+break stage1main
+continue
+layout src
+layout reg
+
