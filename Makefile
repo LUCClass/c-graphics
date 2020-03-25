@@ -19,12 +19,12 @@ $(ODIR)/%.o: $(SDIR)/%.c
 $(ODIR)/%.o: $(SDIR)/%.s
 	nasm -f elf32 -g -o $@ $^
 
-all: bin img
+all: setup bin img
 
 setup:
 	mkdir -p obj
 
-bin: setup $(OBJ)
+bin: $(OBJ)
 	ld -Ttext=0x7e00 -melf_i386 $^ -Tstage1.ld -o obj/stage1.elf
 	objcopy -O binary obj/stage1.elf stage1.bin
 	size obj/stage1.elf
